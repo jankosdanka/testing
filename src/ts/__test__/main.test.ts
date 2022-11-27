@@ -38,7 +38,7 @@ test("should create todo", () => {
 test("should not create todo", () => {
   //arrange
   let spy = jest.spyOn(functions, "displayError").mockReturnValue();
-  let todoText: string = "plugga";
+  let todoText: string = "no";
   let todos: Todo[] = [new Todo("Inlämning", false)];
   //act
   functions.createNewTodo(todoText, todos);
